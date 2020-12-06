@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websockets</title>
+    <style>
+        body {
+            overflow-y: hidden;
+        }
+
+        .list-container {
+            margin: 50px auto;
+            overflow-y: hidden;
+            box-sizing: border-box;
+        }
+
+        .list-btn-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .list {
+            height: calc(100vh - 100px);
+            overflow-y: auto;
+            list-style: none;
+            padding: 0;
+        }
+
+        .list-item {
+            padding: 10px 20px;
+            box-sizing: border-box;
+            white-space: nowrap;
+            background-color: lightgreen;
+        }
+
+        .list-link {
+            text-decoration: none;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="list-container">
+        <div class="list-btn-container">
+            <button class="js-reset">Reset</button>
+        </div>
+        <ul class="list"></ul>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

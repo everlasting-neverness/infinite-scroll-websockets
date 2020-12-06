@@ -1,0 +1,20 @@
+{
+  "name": "try-websockets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "parcel ./src/index.html",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "parcel-bundler": "^1.12.4",
+    "ws": "^7.4.1"
+  }
+}
