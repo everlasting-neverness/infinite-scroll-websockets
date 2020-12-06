@@ -3,7 +3,7 @@ import Scroller from './Scroller';
 
 const state = new State();
 
-window.onload = function() {
+const initApp = () => {
     const list = document.querySelector('.list');
     const resetBtn = document.querySelector('.js-reset');
 
@@ -36,3 +36,5 @@ window.onload = function() {
         scroller.render(newData, currentState.append);
     });
 }
+
+window.onload = initApp;
